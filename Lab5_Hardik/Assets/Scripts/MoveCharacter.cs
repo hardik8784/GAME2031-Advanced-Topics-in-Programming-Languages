@@ -18,22 +18,22 @@ public class MoveCharacter : MonoBehaviour
     {
         Vector3 position = transform.position;
 
-        if(Input.GetKey("w"))
+        if(Input.GetKey("up"))
         {
             position.y += speed * Time.deltaTime;
         }
 
-        if (Input.GetKey("s"))
+        if (Input.GetKey("down"))
         {
             position.y -= speed * Time.deltaTime;
         }
 
-        if (Input.GetKey("d"))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             position.x += speed * Time.deltaTime;
         }
 
-        if (Input.GetKey("a"))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             position.x -= speed * Time.deltaTime;
         }
